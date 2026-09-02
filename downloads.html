@@ -4,105 +4,141 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Downloads | Frankie Bell</title>
+
 <style>
+*{margin:0;padding:0;box-sizing:border-box;}
 body{
-  font-family:Arial;
-  background:#F4F0E6;
-  margin:0;
-  color:#222;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#F4F0E6;
+    color:#222;
 }
 header{
-  text-align:center;
-  padding:50px 20px;
+    text-align:center;
+    padding:55px 20px 35px;
 }
-h1{font-size:42px;}
+h1{
+    font-size:46px;
+    margin-bottom:10px;
+}
+p{color:#666;}
+
+.home{
+    display:inline-block;
+    margin-top:18px;
+    background:#222;
+    color:white;
+    text-decoration:none;
+    padding:10px 18px;
+    border-radius:999px;
+    font-weight:bold;
+}
+
 .grid{
-  max-width:1100px;
-  margin:auto;
-  padding:20px;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:24px;
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:24px;
 }
+
 .card{
-  background:white;
-  border-radius:18px;
-  overflow:hidden;
-  box-shadow:0 8px 18px rgba(0,0,0,.12);
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
+    transition:.2s;
 }
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
 .thumb{
-  height:160px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:55px;
-  color:white;
+    height:170px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:60px;
+    color:white;
 }
-.blue{background:#2563EB;}
-.gray{background:#64748B;}
-.sky{background:#0EA5E9;}
-.gold{background:#F59E0B;}
-.info{padding:18px;}
+
+.admin{background:linear-gradient(135deg,#2563EB,#111827);}
+.notify{background:linear-gradient(135deg,#64748B,#334155);}
+.kick{background:linear-gradient(135deg,#0EA5E9,#1E293B);}
+.coins{background:linear-gradient(135deg,#F59E0B,#92400E);}
+
+.info{
+    padding:18px;
+}
+
+.version{
+    font-size:13px;
+    color:#888;
+    margin:8px 0;
+}
+
 .btn{
-  display:block;
-  text-align:center;
-  background:#D89B18;
-  color:white;
-  padding:12px;
-  border-radius:10px;
-  text-decoration:none;
-  font-weight:bold;
-}
-.back{
-  display:inline-block;
-  margin-top:20px;
-  color:#2563EB;
-  text-decoration:none;
+    display:block;
+    text-align:center;
+    background:#D89B18;
+    color:white;
+    text-decoration:none;
+    padding:12px;
+    border-radius:10px;
+    font-weight:bold;
+    margin-top:12px;
 }
 </style>
 </head>
+
 <body>
 
 <header>
-  <h1>📦 Free Downloads</h1>
-  <p>Download Roblox systems created by Frankie Bell.</p>
-  <a class="back" href="index.html">← Back to Home</a>
+    <h1>📦 Free Roblox Downloads</h1>
+    <p>Download systems created by Frankie Bell</p>
+
+    <a class="home" href="index.html">← Back to Home</a>
 </header>
 
 <div class="grid">
 
 <div class="card">
-<div class="thumb blue">🛡️</div>
+<div class="thumb admin">🛡️</div>
 <div class="info">
 <h3>Admin Panel</h3>
-<p>Version 1.0</p>
+<p>Professional moderation GUI.</p>
+<div class="version">Version 1.0</div>
 <a class="btn" href="#">Download RBXM</a>
 </div>
 </div>
 
 <div class="card">
-<div class="thumb gray">🔔</div>
+<div class="thumb notify">🔔</div>
 <div class="info">
 <h3>Notification System</h3>
-<p>Version 1.0</p>
+<p>Animated alerts & announcements.</p>
+<div class="version">Version 1.0</div>
 <a class="btn" href="#">Download RBXM</a>
 </div>
 </div>
 
 <div class="card">
-<div class="thumb sky">👢</div>
+<div class="thumb kick">👢</div>
 <div class="info">
-<h3>Kick System</h3>
-<p>Version 1.0</p>
+<h3>Private Server Kick</h3>
+<p>VIP owner management system.</p>
+<div class="version">Version 1.0</div>
 <a class="btn" href="#">Download RBXM</a>
 </div>
 </div>
 
 <div class="card">
-<div class="thumb gold">🪙</div>
+<div class="thumb coins">🪙</div>
 <div class="info">
 <h3>Coins & Wins GUI</h3>
-<p>Version 1.0</p>
+<p>Modern cash and wins interface.</p>
+<div class="version">Version 1.0</div>
 <a class="btn" href="#">Download RBXM</a>
 </div>
 </div>
