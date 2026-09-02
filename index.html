@@ -4,40 +4,115 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Frankie Bell | Roblox Assets</title>
+
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:Arial;background:#F4F0E6;color:#222}
+
 header{text-align:center;padding:60px 20px}
-.avatar{width:120px;height:120px;border-radius:50%;background:#222;
-margin:auto;display:flex;align-items:center;justify-content:center;
-font-size:58px}
-h1{font-size:48px;margin-top:18px}
-.tag{color:#666;margin:10px 0 25px}
-.socials{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
-.social{background:#fff;padding:12px 18px;border-radius:30px;
-text-decoration:none;color:#222;font-weight:bold}
-.title{text-align:center;font-size:34px;margin:10px 0 25px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:24px;max-width:1100px;margin:auto;padding:20px}
-.card{background:white;border-radius:18px;overflow:hidden;
-box-shadow:0 8px 20px rgba(0,0,0,.12)}
-.thumb{height:160px;display:flex;align-items:center;
-justify-content:center;font-size:55px;color:white}
-.blue{background:linear-gradient(135deg,#2563EB,#111827)}
-.gray{background:linear-gradient(135deg,#64748B,#334155)}
-.sky{background:linear-gradient(135deg,#0EA5E9,#1E293B)}
-.gold{background:linear-gradient(135deg,#F59E0B,#92400E)}
+.avatar{
+width:120px;height:120px;border-radius:50%;
+background:#222;margin:auto;
+display:flex;align-items:center;justify-content:center;
+font-size:60px;color:white;
+}
+h1{font-size:48px;margin-top:15px}
+.tag{color:#666;margin:10px 0 20px}
+
+.socials{
+display:flex;justify-content:center;gap:10px;
+flex-wrap:wrap;
+}
+.social{
+background:white;padding:12px 18px;
+border-radius:30px;text-decoration:none;
+color:#222;font-weight:bold;
+box-shadow:0 3px 8px rgba(0,0,0,.08);
+}
+
+.search{
+max-width:700px;
+margin:30px auto;
+padding:0 20px;
+}
+.search input{
+width:100%;
+padding:16px;
+font-size:16px;
+border:none;
+border-radius:14px;
+outline:none;
+box-shadow:0 5px 12px rgba(0,0,0,.1);
+}
+
+.title{
+text-align:center;
+font-size:34px;
+margin-bottom:20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:24px;
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:white;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 8px 18px rgba(0,0,0,.12);
+transition:.2s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.thumb{
+height:160px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:55px;
+color:white;
+}
+
+.blue{background:linear-gradient(135deg,#2563EB,#111827);}
+.gray{background:linear-gradient(135deg,#64748B,#334155);}
+.sky{background:linear-gradient(135deg,#0EA5E9,#1E293B);}
+.gold{background:linear-gradient(135deg,#F59E0B,#92400E);}
+
 .info{padding:18px}
 .info p{color:#666;font-size:14px;margin:8px 0 14px}
-.btn{display:block;background:#D89B18;color:white;text-align:center;
-padding:12px;border-radius:10px;text-decoration:none;font-weight:bold}
-footer{text-align:center;padding:35px;color:#666}
+
+.btn{
+display:block;
+background:#D89B18;
+color:white;
+text-align:center;
+padding:12px;
+border-radius:10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+footer{
+text-align:center;
+padding:35px;
+color:#666;
+}
 </style>
 </head>
+
 <body>
 
 <header>
 <div class="avatar">👑</div>
+
 <h1>Frankie Bell</h1>
 <p class="tag">Free Roblox Systems • UI Packs • Creator Assets</p>
 
@@ -48,6 +123,14 @@ footer{text-align:center;padding:35px;color:#666}
 </div>
 </header>
 
+<div class="search">
+<input
+type="text"
+id="search"
+placeholder="🔍 Search Roblox assets..."
+onkeyup="searchAssets()">
+</div>
+
 <h2 class="title">Featured Assets</h2>
 
 <div class="grid">
@@ -56,7 +139,7 @@ footer{text-align:center;padding:35px;color:#666}
 <div class="thumb blue">🛡️</div>
 <div class="info">
 <h3>Admin Panel</h3>
-<p>Professional moderation GUI.</p>
+<p>Modern moderation GUI.</p>
 <a class="btn" href="#">Download</a>
 </div>
 </div>
@@ -65,7 +148,7 @@ footer{text-align:center;padding:35px;color:#666}
 <div class="thumb gray">🔔</div>
 <div class="info">
 <h3>Notification System</h3>
-<p>Animated alerts for every game.</p>
+<p>Animated game notifications.</p>
 <a class="btn" href="#">Download</a>
 </div>
 </div>
@@ -73,8 +156,8 @@ footer{text-align:center;padding:35px;color:#666}
 <div class="card">
 <div class="thumb sky">👢</div>
 <div class="info">
-<h3>Kick System</h3>
-<p>Private server owner tools.</p>
+<h3>Private Server Kick</h3>
+<p>VIP server owner tools.</p>
 <a class="btn" href="#">Download</a>
 </div>
 </div>
@@ -83,7 +166,7 @@ footer{text-align:center;padding:35px;color:#666}
 <div class="thumb gold">🪙</div>
 <div class="info">
 <h3>Coins & Wins GUI</h3>
-<p>Modern currency interface.</p>
+<p>Professional currency interface.</p>
 <a class="btn" href="#">Download</a>
 </div>
 </div>
@@ -91,8 +174,25 @@ footer{text-align:center;padding:35px;color:#666}
 </div>
 
 <footer>
-© 2026 Frankie Bell • Roblox Creator
+© 2026 Frankie Bell
 </footer>
+
+<script>
+function searchAssets(){
+let input=document.getElementById("search").value.toLowerCase();
+let cards=document.getElementsByClassName("card");
+
+for(let i=0;i<cards.length;i++){
+let text=cards[i].innerText.toLowerCase();
+
+if(text.includes(input)){
+cards[i].style.display="block";
+}else{
+cards[i].style.display="none";
+}
+}
+}
+</script>
 
 </body>
 </html>
