@@ -1,29 +1,121 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Frankie Bell</title>
-  <style>
-    body{margin:0;font-family:Arial;background:#F4F0E6;}
-    header{text-align:center;padding:50px 20px;}
-    h1{font-size:52px;margin:10px;}
-    .cards{display:flex;justify-content:center;gap:25px;flex-wrap:wrap;padding:30px;}
-    .card{background:white;width:300px;border-radius:18px;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,.15);}
-    .img{height:170px;background:linear-gradient(135deg,#1d4ed8,#111827);}
-    .info{padding:18px;}
-    .btn{display:block;background:#D89B18;color:white;text-decoration:none;padding:12px;border-radius:10px;font-weight:bold;text-align:center;}
-  </style>
+<meta charset="UTF-8">
+<title>Frankie Bell</title>
+<style>
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#F4F0E6;
+}
+.hero{
+  text-align:center;
+  padding:60px 20px;
+}
+.avatar{
+  width:120px;
+  height:120px;
+  margin:auto;
+  border-radius:50%;
+  background:#222;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:55px;
+  color:white;
+}
+h1{margin:15px 0 5px;font-size:48px;}
+.socials{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:20px;
+}
+.social{
+  background:white;
+  padding:10px 18px;
+  border-radius:30px;
+  text-decoration:none;
+  color:black;
+  font-weight:bold;
+}
+.cards{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  flex-wrap:wrap;
+  padding:30px;
+}
+.card{
+  background:white;
+  width:300px;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+.image{
+  height:170px;
+  background:linear-gradient(135deg,#2563EB,#111827);
+}
+.info{padding:18px;}
+.download{
+  display:block;
+  text-align:center;
+  background:#D89B18;
+  color:white;
+  text-decoration:none;
+  padding:12px;
+  border-radius:10px;
+  font-weight:bold;
+}
+</style>
 </head>
 <body>
-<header>
-  <div style="font-size:70px">👑</div>
-  <h1>Frankie Bell</h1>
-  <p>Free Roblox Systems • UI Packs • Assets</p>
-</header>
-<div class="cards">
-  <div class="card"><div class="img"></div><div class="info"><h2>Admin Panel</h2><p>Modern moderation GUI.</p><a class="btn" href="#">Download</a></div></div>
-  <div class="card"><div class="img"></div><div class="info"><h2>Notification System</h2><p>Animated alerts.</p><a class="btn" href="#">Download</a></div></div>
-  <div class="card"><div class="img"></div><div class="info"><h2>Kick System</h2><p>Private server tools.</p><a class="btn" href="#">Download</a></div></div>
+
+<section class="hero">
+<div class="avatar">👑</div>
+<h1>Frankie Bell</h1>
+<p>Free Roblox Systems • UI Packs • Assets</p>
+
+<div class="socials">
+<a class="social" href="#">🎮 Roblox</a>
+<a class="social" href="#">💬 Discord</a>
+<a class="social" href="#">▶ YouTube</a>
 </div>
+</section>
+
+<div class="cards">
+
+<div class="card">
+<div class="image"></div>
+<div class="info">
+<h2>Admin Panel</h2>
+<p>Modern moderation GUI.</p>
+<a class="download" href="#">Download</a>
+</div>
+</div>
+
+<div class="card">
+<div class="image"></div>
+<div class="info">
+<h2>Notification System</h2>
+<p>Animated alerts.</p>
+<a class="download" href="#">Download</a>
+</div>
+</div>
+
+<div class="card">
+<div class="image"></div>
+<div class="info">
+<h2>Kick System</h2>
+<p>Private server owner tools.</p>
+<a class="download" href="#">Download</a>
+</div>
+</div>
+
+</div>
+
 </body>
 </html>
