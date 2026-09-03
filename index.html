@@ -6,121 +6,165 @@
 <title>Frankie Bell | Roblox Assets</title>
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Arial;background:#F4F0E6;color:#222}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#F4F0E6;
+    color:#222;
+}
 
-header{text-align:center;padding:60px 20px}
+/* NAVBAR */
+nav{
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 30px;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+}
+.logo{
+    font-size:22px;
+    font-weight:bold;
+}
+nav a{
+    text-decoration:none;
+    color:#333;
+    margin-left:18px;
+    font-weight:bold;
+}
+nav a:hover{
+    color:#D89B18;
+}
+
+/* HERO */
+header{
+    text-align:center;
+    padding:60px 20px 30px;
+}
 .avatar{
-width:120px;height:120px;border-radius:50%;
-background:#222;margin:auto;
-display:flex;align-items:center;justify-content:center;
-font-size:60px;color:white;
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:#222;
+    color:white;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:60px;
 }
-h1{font-size:48px;margin-top:15px}
-.tag{color:#666;margin:10px 0 20px}
+h1{
+    font-size:48px;
+    margin-top:15px;
+}
+.tag{
+    color:#666;
+    margin-top:8px;
+}
 
-.socials{
-display:flex;justify-content:center;gap:10px;
-flex-wrap:wrap;
-}
-.social{
-background:white;padding:12px 18px;
-border-radius:30px;text-decoration:none;
-color:#222;font-weight:bold;
-box-shadow:0 3px 8px rgba(0,0,0,.08);
-}
-
+/* SEARCH */
 .search{
-max-width:700px;
-margin:30px auto;
-padding:0 20px;
+    max-width:700px;
+    margin:30px auto;
+    padding:0 20px;
 }
 .search input{
-width:100%;
-padding:16px;
-font-size:16px;
-border:none;
-border-radius:14px;
-outline:none;
-box-shadow:0 5px 12px rgba(0,0,0,.1);
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:14px;
+    font-size:16px;
+    box-shadow:0 5px 12px rgba(0,0,0,.1);
+    outline:none;
 }
 
+/* TITLE */
 .title{
-text-align:center;
-font-size:34px;
-margin-bottom:20px;
+    text-align:center;
+    font-size:34px;
+    margin-bottom:20px;
 }
 
+/* CARDS */
 .grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:24px;
-max-width:1100px;
-margin:auto;
-padding:20px;
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:24px;
 }
-
 .card{
-background:white;
-border-radius:18px;
-overflow:hidden;
-box-shadow:0 8px 18px rgba(0,0,0,.12);
-transition:.2s;
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
+    transition:.2s;
 }
-
 .card:hover{
-transform:translateY(-6px);
+    transform:translateY(-6px);
 }
-
 .thumb{
-height:160px;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:55px;
-color:white;
+    height:170px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:55px;
+    color:white;
 }
+.admin{background:linear-gradient(135deg,#2563EB,#111827);}
+.notify{background:linear-gradient(135deg,#64748B,#334155);}
+.kick{background:linear-gradient(135deg,#0EA5E9,#1E293B);}
+.coins{background:linear-gradient(135deg,#F59E0B,#92400E);}
 
-.blue{background:linear-gradient(135deg,#2563EB,#111827);}
-.gray{background:linear-gradient(135deg,#64748B,#334155);}
-.sky{background:linear-gradient(135deg,#0EA5E9,#1E293B);}
-.gold{background:linear-gradient(135deg,#F59E0B,#92400E);}
-
-.info{padding:18px}
-.info p{color:#666;font-size:14px;margin:8px 0 14px}
-
+.info{
+    padding:18px;
+}
+.info p{
+    color:#666;
+    margin:8px 0 14px;
+    font-size:14px;
+}
 .btn{
-display:block;
-background:#D89B18;
-color:white;
-text-align:center;
-padding:12px;
-border-radius:10px;
-text-decoration:none;
-font-weight:bold;
+    display:block;
+    text-align:center;
+    background:#D89B18;
+    color:white;
+    text-decoration:none;
+    padding:12px;
+    border-radius:10px;
+    font-weight:bold;
 }
 
+/* FOOTER */
 footer{
-text-align:center;
-padding:35px;
-color:#666;
+    text-align:center;
+    padding:35px;
+    color:#666;
 }
 </style>
 </head>
 
 <body>
 
+<nav>
+    <div class="logo">👑 Frankie Bell</div>
+
+    <div>
+        <a href="index.html">Home</a>
+        <a href="downloads.html">Downloads</a>
+        <a href="#">Discord</a>
+        <a href="#">YouTube</a>
+    </div>
+</nav>
+
 <header>
-<div class="avatar">👑</div>
+    <div class="avatar">👑</div>
 
-<h1>Frankie Bell</h1>
-<p class="tag">Free Roblox Systems • UI Packs • Creator Assets</p>
-
-<div class="socials">
-<a class="social" href="#">🎮 Roblox</a>
-<a class="social" href="#">💬 Discord</a>
-<a class="social" href="#">▶ YouTube</a>
-</div>
+    <h1>Frankie Bell</h1>
+    <p class="tag">Free Roblox Systems • UI Packs • Creator Assets</p>
 </header>
 
 <div class="search">
@@ -133,64 +177,64 @@ onkeyup="searchAssets()">
 
 <h2 class="title">Featured Assets</h2>
 
-<div class="grid">
+<div class="grid" id="assets">
 
 <div class="card">
-<div class="thumb blue">🛡️</div>
+<div class="thumb admin">🛡️</div>
 <div class="info">
 <h3>Admin Panel</h3>
-<p>Modern moderation GUI.</p>
-<a class="btn" href="#">Download</a>
+<p>Professional moderation GUI with kick & freeze.</p>
+<a class="btn" href="downloads.html">Download</a>
 </div>
 </div>
 
 <div class="card">
-<div class="thumb gray">🔔</div>
+<div class="thumb notify">🔔</div>
 <div class="info">
 <h3>Notification System</h3>
-<p>Animated game notifications.</p>
-<a class="btn" href="#">Download</a>
+<p>Animated alerts and announcements.</p>
+<a class="btn" href="downloads.html">Download</a>
 </div>
 </div>
 
 <div class="card">
-<div class="thumb sky">👢</div>
+<div class="thumb kick">👢</div>
 <div class="info">
 <h3>Private Server Kick</h3>
-<p>VIP server owner tools.</p>
-<a class="btn" href="#">Download</a>
+<p>VIP server owner management tools.</p>
+<a class="btn" href="downloads.html">Download</a>
 </div>
 </div>
 
 <div class="card">
-<div class="thumb gold">🪙</div>
+<div class="thumb coins">🪙</div>
 <div class="info">
 <h3>Coins & Wins GUI</h3>
-<p>Professional currency interface.</p>
-<a class="btn" href="#">Download</a>
+<p>Modern currency and wins interface.</p>
+<a class="btn" href="downloads.html">Download</a>
 </div>
 </div>
 
 </div>
 
 <footer>
-© 2026 Frankie Bell
+© 2026 Frankie Bell • Roblox Creator
 </footer>
 
 <script>
 function searchAssets(){
 let input=document.getElementById("search").value.toLowerCase();
-let cards=document.getElementsByClassName("card");
+let cards=document.querySelectorAll(".card");
 
-for(let i=0;i<cards.length;i++){
-let text=cards[i].innerText.toLowerCase();
+cards.forEach(card=>{
+let text=card.innerText.toLowerCase();
 
 if(text.includes(input)){
-cards[i].style.display="block";
+card.style.display="block";
 }else{
-cards[i].style.display="none";
+card.style.display="none";
 }
-}
+});
 }
 </script>
 
